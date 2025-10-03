@@ -1,0 +1,175 @@
+/* frontend/src/App.css */
+
+/* --- FONT & COLOR PALETTE --- */
+:root {
+  --bg-color: #1a1b26;
+  --surface-color: #24283b;
+  --text-color: #c0caf5;
+  --accent-color: #7aa2f7;
+  --border-color: #414868;
+  --error-color: #f7768e;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- MAIN LAYOUT --- */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+/* --- FORM & INPUT --- */
+form {
+  display: flex;
+  width: 60%;
+  max-width: 800px;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(122, 162, 247, 0.3);
+}
+
+button {
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--bg-color);
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #9eceff;
+}
+
+button:disabled {
+  background-color: var(--border-color);
+  cursor: not-allowed;
+}
+
+/* --- RESULTS DISPLAY --- */
+.results {
+  margin-top: 2rem;
+  text-align: left;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.results h2, .results h3 {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.sql-query {
+  background-color: var(--surface-color);
+  padding: 1rem;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+}
+
+/* --- Table Styling --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 0.8rem 1rem;
+}
+
+th {
+  background-color: var(--surface-color);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(36, 40, 59, 0.5);
+}
+
+/* --- Document Card Styling --- */
+.doc-results {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.doc-card {
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid var(--accent-color);
+}
+.doc-card h4 {
+    margin-top: 0;
+    color: var(--accent-color);
+}
+
+/* --- Loading Spinner & Error --- */
+.loader {
+  border: 4px solid var(--surface-color);
+  border-top: 4px solid var(--accent-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-top: 2rem;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  margin-top: 1rem;
+  color: var(--error-color);
+  background-color: rgba(247, 118, 142, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--error-color);
+}
