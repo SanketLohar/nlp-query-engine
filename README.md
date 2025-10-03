@@ -18,6 +18,7 @@ This project is a full-stack web application that serves as a powerful natural l
 
 <img width="1890" height="883" alt="Image" src="https://github.com/user-attachments/assets/7307b83e-9218-42c4-849e-9d0f5ecb3fa3" />
 <img width="1887" height="901" alt="Image" src="https://github.com/user-attachments/assets/cf06d0fa-689d-4ff6-8b44-7ed180ec3e50" />
+<img width="1881" height="891" alt="Image" src="https://github.com/user-attachments/assets/2c20912a-952c-4d8c-9210-ef6696a63ad5" />
 
 ## Core Features 
 
