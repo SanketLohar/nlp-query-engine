@@ -9,7 +9,7 @@ This project is a full-stack web application that serves as a powerful natural l
 
 
 ## Screenshot
-**A screenshot of user onterface**
+**A screenshot of user interface**
 <img width="1890" height="883" alt="Image" src="https://github.com/user-attachments/assets/7307b83e-9218-42c4-849e-9d0f5ecb3fa3" />
 <img width="1887" height="901" alt="Image" src="https://github.com/user-attachments/assets/cf06d0fa-689d-4ff6-8b44-7ed180ec3e50" />
 <img width="1881" height="493" alt="Image" src="https://github.com/user-attachments/assets/7c657737-3aa0-4915-991a-35acb944a10f" />
