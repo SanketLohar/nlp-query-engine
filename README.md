@@ -1,3 +1,6 @@
+# NLP Query Engine for Employee Data 
+This project is a full-stack web application that serves as a powerful natural language interface for querying both a structured employee database (PostgreSQL) and unstructured text documents. It features a hybrid AI query engine that can translate human questions into SQL and perform semantic searches to provide comprehensive answers.
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -5,20 +8,12 @@
 
 
 
-
-
-# NLP Query Engine for Employee Data 
-
-
-
-This project is a full-stack web application that serves as a powerful natural language interface for querying both a structured employee database (PostgreSQL) and unstructured text documents. It features a hybrid AI query engine that can translate human questions into SQL and perform semantic searches to provide comprehensive answers.
-
-
 ## Screenshot
-
+**A screenshot of user onterface**
 <img width="1890" height="883" alt="Image" src="https://github.com/user-attachments/assets/7307b83e-9218-42c4-849e-9d0f5ecb3fa3" />
 <img width="1887" height="901" alt="Image" src="https://github.com/user-attachments/assets/cf06d0fa-689d-4ff6-8b44-7ed180ec3e50" />
 <img width="1881" height="891" alt="Image" src="https://github.com/user-attachments/assets/2c20912a-952c-4d8c-9210-ef6696a63ad5" />
+
 
 ## Core Features 
 
